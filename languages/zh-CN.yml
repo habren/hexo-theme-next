@@ -10,7 +10,9 @@ menu:
   home: 首页
   archives: 归档
   categories: 分类
-  tags: 标签
+  tags: 标签云
+  kafka: Kafka
+  sql: SQL
   about: 关于
   search: 搜索
   schedule: 日程表
@@ -45,7 +47,7 @@ page:
   tags: 标签
 
 footer:
-  powered: "由 %s 强力驱动"
+  powered: " %s "
   theme: 主题
 
 counter:
