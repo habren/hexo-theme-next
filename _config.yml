@@ -38,12 +38,14 @@ seo: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-#  categories: /categories
+  categories: /categories
 #  about: /about
 #  archives: /archives
 #  tags: /tags
   kafka: /tags/Kafka/
-  sql: /tags/SQL
+  sql: /tags/SQL/
+  java: /tags/Java/
+  design_pattern: /tags/Design-Pattern/
   #commonweal: /404.html
 
 
@@ -65,6 +67,8 @@ menu_icons:
   commonweal: heartbeat
   kafka: list
   sql: database
+  java: fire
+  design_pattern: diamond
 
 
 

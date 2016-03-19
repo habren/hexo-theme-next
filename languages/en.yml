@@ -11,6 +11,10 @@ menu:
   archives: Archives
   categories: Categories
   tags: Tags
+  kafka: Kafka
+  sql: SQL
+  java: Java
+  design_pattern: Design Pattern
   about: About
   search: Search
   schedule: Schedule
