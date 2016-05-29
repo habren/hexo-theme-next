@@ -244,6 +244,12 @@
               </div>
           {% endif %}
 
+          {# Display post word count #}
+          {% if theme.wordcount.post %}
+            <span class="post-count">
+            &nbsp; | &nbsp; 字数 &nbsp; {{ wordcount(post.content) }}
+            </span>
+          {% endif%}
         </div>
       </header>
     {% endif %}
