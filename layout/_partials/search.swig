@@ -6,4 +6,6 @@
   {% include 'search/tinysou.swig' %}
 {% elseif theme.local_search.enable %}
   {% include 'search/localsearch.swig' %}
+{% elseif theme.baidu_search %}
+  {% include 'search/baidu_search.swig' %}
 {% endif %}

@@ -48,7 +48,7 @@
           </a>
         </li>
       {% endfor %}
-
+<!--
       {% if hasSearch %}
         <li class="menu-item menu-item-search">
           {% if theme.swiftype_key %}
@@ -63,6 +63,7 @@
           </a>
         </li>
       {% endif %}
+-->
     </ul>
   {% endif %}
 
