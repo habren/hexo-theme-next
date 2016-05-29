@@ -27,7 +27,7 @@
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="{{ url_for( theme.avatar | default(theme.images + '/avatar.gif') ) }}"
-               alt="{{ theme.author }}" />
+               alt="{{ theme.author }}" height="120px" width="120px"/>
           <p class="site-author-name" itemprop="name">{{ theme.author }}</p>
            {% if theme.seo %}
               <p class="site-description motion-element" itemprop="description">{{ theme.signature }}</p>
@@ -70,12 +70,18 @@
 
         </nav>
 
-        {% if theme.rss %}
           <div class="feed-link motion-element">
-            <a href="{{ url_for(theme.rss) }}" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
+            {% if theme.rss %}
+              <a href="{{ url_for(theme.rss) }}" rel="alternate" target="_blank">
+                <i class="fa fa-rss"></i>
+              RSS订阅
+              </a>
+            {% if theme.mailchimp %}
+              <a href="{{ theme.mailchimp }}" rel="external nofollow" target="_blank">
+                <i class="fa fa-rss"></i>
+              邮件订阅
+              </a>
+            {% endif %}
           </div>
         {% endif %}
 
@@ -83,7 +89,7 @@
           {% if theme.social %}
             {% for name, link in theme.social %}
               <span class="links-of-author-item">
-                <a href="{{ link }}" target="_blank" title="{{ name }}">
+                <a href="{{ link }}" target="_blank" title="{{ name }}" rel="external nofollow">
                   {% if theme.social_icons.enable %}
                     <i class="fa fa-{{ theme.social_icons[name] || 'globe' }}"></i>
                   {% endif %}
@@ -97,7 +103,7 @@
         {% set cc = {'by': 1, 'by-nc': 1, 'by-nc-nd': 1, 'by-nc-sa': 1, 'by-nd': 1, 'by-sa': 1, 'zero': 1} %}
         {% if theme.creative_commons in cc %}
           <div class="cc-license motion-element" itemprop="license">
-            <a href="https://creativecommons.org/{% if theme.creative_commons === 'zero' %}publicdomain/zero/1.0{% else %}licenses/{{ theme.creative_commons }}/4.0{% endif %}/" class="cc-opacity" target="_blank">
+            <a href="https://creativecommons.org/{% if theme.creative_commons === 'zero' %}publicdomain/zero/1.0{% else %}licenses/{{ theme.creative_commons }}/4.0{% endif %}/" class="cc-opacity" target="_blank" rel="external nofollow">
               <img src="{{ url_for(theme.images) }}/cc-{{ theme.creative_commons }}.svg" alt="Creative Commons" />
             </a>
           </div>
