@@ -1,3 +1,4 @@
+<!--
 {% if theme.baidu_analytics %}
   <script type="text/javascript">
     var _hmt = _hmt || [];
@@ -7,5 +8,10 @@
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
+  </script>
+{% endif %}
+-->
+{% if theme.baidu_analytics %}
+  <script type="text/javascript" async src = "//hm.baidu.com/hm.js?{{ theme.baidu_analytics }}">
   </script>
 {% endif %}

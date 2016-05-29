@@ -38,20 +38,12 @@ seo: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-<<<<<<< HEAD
-  #categories: /categories
-  #about: /about
-  archives: /archives
-  tags: /tags
-  #sitemap: /sitemap.xml
-=======
 #  categories: /categories
 #  about: /about
 #  archives: /archives
 #  tags: /tags
   kafka: /tags/Kafka/
   sql: /tags/SQL
->>>>>>> Remove default search menu and use Baidu search
   #commonweal: /404.html
 
 
@@ -185,20 +177,11 @@ toc:
 
 sidebar:
   # Sidebar Position, available value: left | right
-  display: always
+  display: post
   # Sidebar Display, available value:
   #  - post    expand on posts automatically. Default.
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
-<<<<<<< HEAD
-  #  - remove  Totally remove sidebar including sidebar toggle.
-  display: post
-  #display: always
-  #display: hide
-  #display: remove
-=======
-
->>>>>>> Remove default search menu and use Baidu search
 
   # Sidebar offset from top menubar in pixels.
   offset: 12
@@ -278,10 +261,8 @@ custom_logo:
   enabled: false
   image:
 
-=======
 # Use Lato font
 use_font_lato: false
->>>>>>> Remove default search menu and use Baidu search
 
 # Code Highlight theme
 # Available value:

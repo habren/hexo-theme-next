@@ -246,9 +246,14 @@
 
           {# Display post word count #}
           {% if theme.wordcount.post %}
-            <span class="post-count">
-            &nbsp; | &nbsp; 字数 &nbsp; {{ wordcount(post.content) }}
+            &nbsp; | &nbsp;
+            <span class="post-meta-item-icon">
+              <i class="fa fa-bar-chart"></i>
             </span>
+            <span class="post-meta-item-text">{{__('post.counts')}} </span>
+            <span class="post-count">
+              {{ wordcount(post.content) }}
+             </span>
           {% endif%}
         </div>
       </header>
