@@ -356,7 +356,9 @@ changyan:
 duoshuo_info:
   ua_enable: true
   admin_enable: false
-  user_id: 0
+  user_id: 10314437
+  data_author_key: gj1989lh
+  admin_nickname: Jason
   #admin_nickname: Author
 
 
