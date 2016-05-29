@@ -543,3 +543,8 @@ images: images
 
 # Theme version
 version: 5.1.0
+
+reward:
+  comment: 您的赞赏将支持我坚持原创分享
+  wechatpay: /img/wechat.png
+  alipay: /img/alipay.png
