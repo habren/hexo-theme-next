@@ -3,7 +3,13 @@
 {% import '_macro/sidebar.swig' as sidebar_template %}
 
 
-{% block title %} {{ page.title }} | {{ config.title }} | {{ page.keywords }} {% endblock %}
+{% block title %}
+  {% if page.page_title %}
+    {{ page.page_title }} | {{ config.title }} | {{ page.keywords }}
+  {% else %}
+    {{ page.title }} | {{ config.title }} | {{ page.keywords }}
+  {% endif %}
+{% endblock %}
 
 {% block page_class %}page-post-detail{% endblock %}
 
