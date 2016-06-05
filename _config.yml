@@ -240,7 +240,7 @@ post_wordcount:
 wechat_subscriber:
   enabled: true
   qcode: //cdn.jasongj.com/img/WeChat_QR.png
-  description: 欢迎关注作者微信公众号
+  description: 欢迎关注作者微信公众号【大数据架构】
 
 
 <<<<<<< HEAD
@@ -290,7 +290,7 @@ mathjax:
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: 7dfdf667ba885e2b04d1c1cc561490f0
 
 # Duoshuo ShortName
 #duoshuo_shortname:
@@ -338,10 +338,10 @@ changyan:
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
-#google_site_verification:
+google_site_verification: _lpnaoq9f4n68-jMrHuEIsB1kJO_6WMxvONibOMBdxM
 
 # Google Analytics
-#google_analytics:
+google_analytics: UA-58959834-1
 
 # Yandex Webmaster tools verification setting
 # See: https://webmaster.yandex.ru/
@@ -546,7 +546,7 @@ images: images
 version: 5.1.0
 
 reward:
-  comment: 您的赞赏将支持我坚持原创分享
+  comment: 您的赞赏将支持作者继续原创分享
   wechatpay: /img/wechat.png
   alipay: /img/alipay.png
 
