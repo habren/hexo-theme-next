@@ -16,7 +16,7 @@
   {% endif%}
 
   {# Display site word count #}
-  {% if theme.wordcount.site %}
+  {% if theme.post_wordcount.totalword %}
     <span class="post-count">
       &nbsp; | &nbsp; 总字数 &nbsp; {{ totalcount(site) }}
     </span>
@@ -47,4 +47,3 @@ translateInitilization();
 </script>
 
 {% block footer %}{% endblock %}
->>>>>>> Add ICP, word count, language switch in footer

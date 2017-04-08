@@ -207,8 +207,8 @@
           {% endif %}
 
           {% if theme.post_wordcount.wordcount or theme.post_wordcount.min2read %}
-            <div class="post-wordcount">
               {% if theme.post_wordcount.wordcount %}
+                <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
@@ -235,7 +235,6 @@
                   {{ min2read(post.content) }}
                 </span>
               {% endif %}
-            </div>
           {% endif %}
 
           {% if post.description and (not theme.excerpt_description or not is_index) %}
@@ -243,18 +242,6 @@
                   {{ post.description }}
               </div>
           {% endif %}
-
-          {# Display post word count #}
-          {% if theme.wordcount.post %}
-            &nbsp; | &nbsp;
-            <span class="post-meta-item-icon">
-              <i class="fa fa-bar-chart"></i>
-            </span>
-            <span class="post-meta-item-text">{{__('post.counts')}} </span>
-            <span class="post-count">
-              {{ wordcount(post.content) }}
-             </span>
-          {% endif%}
         </div>
       </header>
     {% endif %}
