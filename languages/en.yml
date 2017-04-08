@@ -12,6 +12,7 @@ menu:
   categories: Categories
   tags: Tags
   kafka: Kafka
+  spark: Safka
   sql: SQL
   java: Java
   design_pattern: Design Pattern

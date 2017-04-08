@@ -12,6 +12,7 @@ menu:
   categories: 分类
   tags: 标签云
   kafka: Kafka
+  spark: Spark
   sql: SQL
   java: Java
   design_pattern: 设计模式
