@@ -173,13 +173,14 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-comment-o"></i>
               </span>
+              <span class="post-meta-item-text">{{__('post.comments')}} </span>
               {% if is_post() %}
                 <a href="{{ url_for(post.path) }}#SOHUCS" itemprop="discussionUrl">
                   <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="{{ post.path }}" itemprop="commentsCount"></span>
                 </a>
               {% else %}
-                <a href="{{ url_for(post.path) }}#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::{{ post.permalink }}" class="cy_cmt_count" data-xid="{{ post.path }}" itemprop="commentsCount" ></span>
+                <a href="{{ url_for(post.path) }}#SOHUCS" itemprop="discussionUrl"s>
+                  <span id="sourceId::{{ post.path }}" class="cy_cmt_count" data-xid="{{ post.path }}" itemprop="commentsCount"></span>
                 </a>
               {% endif %}
             {% endif %}
