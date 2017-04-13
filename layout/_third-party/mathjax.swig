@@ -1,5 +1,5 @@
 {% if theme.mathjax.enable %}
-  {% if not theme.mathjax.per_page or (page.total or page.mathjax) %}
+  {% if theme.mathjax.per_page or page.mathjax %}
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
         tex2jax: {
