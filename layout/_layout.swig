@@ -82,5 +82,23 @@
 
   <script type="text/javascript">$(document).ready(function(){$('.sidebar-toggle').trigger('click');});</script>
 
+  {% if not is_post() %}
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $.get("http://comments.jasongj.com/disqus/count.php?limit=100", function(data){
+          var getPath = function(url) {
+            var path = document.createElement("a");
+            path.href = url;
+            return path.pathname;
+          }
+          data.response.forEach((item) => {
+            path = decodeURI(getPath(item.link));
+            $("span[identifier='" + path + "']").text(item.posts);
+          });
+        });
+    });
+    </script>
+  {% endif %}
+
 </body>
 </html>

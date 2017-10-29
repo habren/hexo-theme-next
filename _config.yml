@@ -20,16 +20,16 @@ rss:
 authoricon: heart
 
 # Footer `powered-by` and `theme-info` copyright
-copyright: true
+copyright: false
 
 
 # Canonical, set a canonical link tag in your hexo, you could use it for your SEO of blog.
 # See: https://support.google.com/webmasters/answer/139066
 # Tips: Before you open this tag, remember set up your URL in hexo _config.yml ( ex. url: http://yourdomain.com )
-canonical: alse
+canonical: true
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
-seo: false
+seo: true
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -44,10 +44,11 @@ menu:
 #  tags: /tags
   kafka: /tags/Kafka/
   spark: /tags/Spark/
-  sql: /tags/SQL/
-  java: /categories/java/
-  design_pattern: /tags/Design-Pattern/
   big_data: /tags/big-data/
+  machine_learning: /tags/machine-learning/
+  sql: /tags/SQL/
+  java: /tags/Java/
+  design_pattern: /tags/Design-Pattern/
   #commonweal: /404.html
 
 
@@ -73,6 +74,7 @@ menu_icons:
   java: fire
   design_pattern: diamond
   big_data: cloud
+  machine_learning: cloud
 
 
 
@@ -300,9 +302,10 @@ baidu_analytics: 7dfdf667ba885e2b04d1c1cc561490f0
 #duoshuo_shortname:
 
 # Disqus
+#disqus_shortname: jasongj
 disqus:
-  enable: false
-  shortname:
+  enable: true
+  shortname: jasongj
   count: true
 
 # Hypercomments
@@ -313,13 +316,13 @@ disqus:
 
 # changyan
 changyan:
-  enable: true
+  enable: false
   appid: cysVSC8y5
   appkey: 78aec947523312dd037caa3093c74fbd
 
 # Support for youyan comments system.
 # You can get your uid from http://www.uyan.cc
-#youyan_uid: your uid
+#youyan_uid: 2130729
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
@@ -494,36 +497,36 @@ vendors:
   _internal: lib
 
   # Internal version: 2.1.3
-  jquery:
+  jquery: //cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js
 
   # Internal version: 2.1.5
   # See: http://fancyapps.com/fancybox/
-  fancybox:
-  fancybox_css:
+  fancybox: //cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.pack.js
+  fancybox_css: //cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.min.css
 
   # Internal version: 1.0.6
   # See: https://github.com/ftlabs/fastclick
-  fastclick:
+  fastclick: //cdn.jsdelivr.net/fastclick/1.0.6/fastclick.min.js
 
   # Internal version: 1.9.7
   # See: https://github.com/tuupola/jquery_lazyload
-  lazyload:
+  lazyload: //cdn.jsdelivr.net/jquery.lazyload/1.9.3/jquery.lazyload.min.js
 
   # Internal version: 1.2.1
   # See: http://VelocityJS.org
-  velocity:
+  velocity: //cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js
 
   # Internal version: 1.2.1
   # See: http://VelocityJS.org
-  velocity_ui:
+  velocity_ui: //cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js
 
   # Internal version: 0.7.9
   # See: https://faisalman.github.io/ua-parser-js/
-  ua_parser:
+  ua_parser: //cdn.jsdelivr.net/ua-parser.js/0.7.10/ua-parser.min.js
 
   # Internal version: 4.6.2
   # See: http://fontawesome.io/
-  fontawesome:
+  fontawesome: //maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css
 
   # Internal version: 1
   # https://www.algolia.com

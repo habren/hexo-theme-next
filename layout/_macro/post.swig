@@ -141,8 +141,9 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="{{ url_for(post.path) }}#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="{{ post.path }}" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">{{__('post.comments')}} </span>
+                  <span identifier= "{{ url_for(post.path) }}" id="disqus-page-comment-count" class="post-comments-count disqus-comment-count"
+                         itemprop="commentCount" target="_blank">0</span>
                 </a>
               </span>
             {% elseif theme.hypercomments_id %}
