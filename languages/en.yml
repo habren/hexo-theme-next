@@ -13,6 +13,7 @@ menu:
   tags: Tags
   kafka: Kafka
   spark: Safka
+  machine_learning: Machine Learning
   sql: SQL
   java: Java
   design_pattern: Design Pattern
