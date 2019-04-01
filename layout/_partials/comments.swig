@@ -16,35 +16,27 @@
     {% elseif theme.disqus.enable %}
       
       <link rel="stylesheet" href="/css/iDisqus.min.css" />
-      <script src="/js/src/iDisqus.min.js"></script>
+      <script type="text/javascript" src="/js/src/iDisqus.min.js"></script>
 
-      <input type="checkbox" hidden="true" id="comment-toggle" disabled />
+      <input type="checkbox" hidden="false" id="comment-toggle" disabled />
       <div id="comment"></div>
-        
-        <!--
-        <p>本页共有 <span data-disqus-url="/{{ page.path }}"></span> 条评论</p>
-        -->
-
-        <!--
-        <ul id="popular-posts"></ul>
-        -->
         <script>
             var disq = new iDisqus('comment', {
                 forum: '{{theme.disqus.shortname}}',
-                api: 'http://comments.jasongj.com/disqus',
-                site: 'http://www.jasongj.com',
+                api: '{{theme.disqus.api}}',
+                site: '{{theme.disqus.site}}',
                 url: decodeURI('/{{ page.path }}'),
+                mode: 3,
                 identifier: decodeURI('/{{ page.path }}'),
                 title: '{{ page.title }}',
-                slug: '{{ page.path }}',
-                mode: 3,
+                slug: '/{{ page.path }}',
                 trust: 'www.jasongj.com',
-                timeout: 3000,
                 popular: document.getElementById('popular-posts'),
+                timeout: 3000,
                 init: true,
+                emojiPreview: true
             });
-            disq.popular();
-            disq.count();
+            <!-- disq.count(); -->
         </script>
     {% elseif theme.hypercomments_id %}
       <div id="hypercomments_widget"></div>

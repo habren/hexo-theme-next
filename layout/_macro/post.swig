@@ -140,8 +140,10 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
+                <span data-disqus-url="http://www.jasongj.com{{ url_for(post.path) }}"></span>
                 <a href="{{ url_for(post.path) }}#comments" itemprop="discussionUrl">
                   <span class="post-meta-item-text">{{__('post.comments')}} </span>
+                  <span data-disqus-url="{{ url_for(post.path) }}"></span>
                   <span identifier= "{{ url_for(post.path) }}" id="disqus-page-comment-count" class="post-comments-count disqus-comment-count"
                          itemprop="commentCount" target="_blank">0</span>
                 </a>

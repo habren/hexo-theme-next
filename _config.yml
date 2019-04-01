@@ -307,6 +307,8 @@ disqus:
   enable: true
   shortname: jasongj
   count: true
+  api: http://comments.jasongj.com/disqus
+  site: http://www.jasongj.com
 
 # Hypercomments
 #hypercomments_id:
